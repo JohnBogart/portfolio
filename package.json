@@ -1,0 +1,11 @@
+{
+  "name": "johnbogart",
+  "version": "1.0.0",
+  "description": "A personal portfolio for John Bogart",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "John William Bogart",
+  "license": "ISC"
+}

@@ -1,7 +1,9 @@
 <template>
   <div>
     <nav-bar></nav-bar>
-    <nuxt></nuxt>
+    <main>
+      <nuxt></nuxt>
+    </main>
   </div>
 </template>
 
@@ -14,3 +16,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  main {
+    background-color: $background;
+    overflow-y: auto;
+    min-height: 100vh;
+  }
+</style>

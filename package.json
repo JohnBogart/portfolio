@@ -4,8 +4,12 @@
   "description": "A personal portfolio for John Bogart",
   "main": "index.js",
   "scripts": {
+    "dev": "nuxt",
     "test": "npm run test"
   },
   "author": "John William Bogart",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nuxt": "^2.14.7"
+  }
 }

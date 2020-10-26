@@ -7,5 +7,9 @@ export default {
   },
   head: {
     title: 'John Bogart'
-  }
+  },
+  css: [
+    'bulma/css/bulma.css',
+    '~/css/main.scss'
+  ]
 }

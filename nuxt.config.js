@@ -11,5 +11,13 @@ export default {
   css: [
     'bulma/css/bulma.css',
     '~/css/main.scss'
-  ]
+  ],
+  modules: [
+    '@nuxtjs/style-resources',
+  ],
+  styleResources: {
+    scss: [
+      '~/css/variables.scss',
+    ]
+  }
 }

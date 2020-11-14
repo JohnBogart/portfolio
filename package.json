@@ -4,7 +4,7 @@
   "description": "A personal portfolio for John Bogart",
   "main": "index.js",
   "scripts": {
-    "dev": "nuxt",
+    "start": "nuxt",
     "test": "npm run test"
   },
   "author": "John William Bogart",

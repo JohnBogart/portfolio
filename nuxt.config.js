@@ -8,11 +8,9 @@ export default {
   head: {
     title: 'John Bogart'
   },
-  css: [
-    
-  ],
   modules: [
     '@nuxtjs/style-resources',
+    'nuxt-buefy'
   ],
   styleResources: {
     scss: [

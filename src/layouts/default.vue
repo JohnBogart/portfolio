@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
   main {
-    background-color: $background;
+    background-color: white;
     overflow-y: auto;
     min-height: 100vh;
   }

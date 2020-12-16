@@ -9,7 +9,7 @@ export default {
     title: 'John Bogart'
   },
   css: [
-    'bulma/css/bulma.css'
+    
   ],
   modules: [
     '@nuxtjs/style-resources',

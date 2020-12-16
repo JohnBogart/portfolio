@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>{{ quote }}</p>
     <button @click='newQuote'>Get New Quote</button>
   </div>
 </template>

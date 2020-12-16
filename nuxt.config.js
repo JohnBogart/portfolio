@@ -14,7 +14,7 @@ export default {
   ],
   styleResources: {
     scss: [
-      '~/css/main.scss',
+      '~/css/main.scss'
     ]
   }
 }

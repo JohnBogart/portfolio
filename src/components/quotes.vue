@@ -1,11 +1,13 @@
 <template>
   <div>
-    <p>{{ quote }}</p>
     <button @click='newQuote'>Get New Quote</button>
+    <p>{{ quote }}</p>
+    <img src="../assets/RONSWANSON.png" />
   </div>
 </template>
 
 <script>
+import fetch from 'node-fetch'
 export default {
   name: 'Quote',
   data: function () {
@@ -15,7 +17,13 @@ export default {
   },
   methods: {
     newQuote: function () {
-      alert('test')
+      try {
+        fetch('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
+          .then(res => res.json())
+          .then(body => this.quote = body[0])
+      } catch (err) {
+        throw new Error(err)
+      }
     }
   }
 }

@@ -11,6 +11,7 @@
   "author": "John William Bogart",
   "license": "ISC",
   "dependencies": {
+    "node-fetch": "^2.6.1",
     "nuxt": "^2.14.7",
     "nuxt-buefy": "^0.4.4"
   },

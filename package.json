@@ -11,7 +11,8 @@
   "author": "John William Bogart",
   "license": "ISC",
   "dependencies": {
-    "nuxt": "^2.14.7"
+    "nuxt": "^2.14.7",
+    "nuxt-buefy": "^0.4.4"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",

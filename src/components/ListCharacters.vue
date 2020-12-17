@@ -1,9 +1,9 @@
 <template>
   <div>
-    <ul>
-      <li v-for='character in characters' :key='character.id'>
-        {{ character.name }}
-      </li>
+    <ul v-for='character in characters' :key='character.id'>
+      <nuxt-link :to="`/schwifty/character/${character.id}`">
+        <li>{{ character.name }}</li>
+      </nuxt-link>
     </ul>
   </div>
 </template>

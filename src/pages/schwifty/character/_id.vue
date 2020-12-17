@@ -2,7 +2,7 @@
   <div>
     <section class="section">
       <div class="container">
-        <h1 class="title">{{ character.name }}</h1>
+        <character-profile :character='character'></character-profile>
       </div>
     </section>
   </div>
@@ -10,8 +10,12 @@
 
 <script>
 import fetch from 'node-fetch'
+import CharacterProfile from '../../../components/CharacterProfile'
 
 export default {
+  components: {
+    CharacterProfile
+  },
   data() {
     return {
       character: {}

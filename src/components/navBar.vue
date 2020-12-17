@@ -12,6 +12,9 @@
           <b-navbar-item href="/swansdom">
               Swansdom
           </b-navbar-item>
+            <b-navbar-item href="/schwifty">
+              Schwifty
+          </b-navbar-item>
         </template>
     </b-navbar>
 </template>

@@ -6,10 +6,5 @@
         <h2 class="subtitle">A dumping ground for all my random little projects</h2>
       </div>
     </section>
-
   </div>
 </template>
-
-<style lang="scss" scoped>
-
-</style>

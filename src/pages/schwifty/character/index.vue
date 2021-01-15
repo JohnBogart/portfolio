@@ -6,7 +6,7 @@
         <p>Total Number of Characters: {{count}}</p>
         <list-characters :page="page"></list-characters>
         <!-- pagination here -->
-        <button @click="goToPage">19</button>
+        <button v-for='page in pages' :key='page' @click="goToPage(page)">{{page}}</button>
       </div>
     </section>
   </div>
@@ -24,17 +24,19 @@ export default {
     return {
       count: 0,
       page: 0,
-      totalPages: 0
+      totalPages: 0,
+      pages: []
     }
   },
   async fetch() {
     const { info } = await fetch('https://rickandmortyapi.com/api/character').then(res => res.json())
     this.count = info.count
     this.totalPages = info.pages
+    this.pages = Array.from(Array(this.totalPages)).map((e,i)=>i+1)
   },
   methods: {
-    goToPage: function () {
-      this.page = 19
+    goToPage: function (page) {
+      this.page = page
     }
   }
 }
